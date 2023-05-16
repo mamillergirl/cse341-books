@@ -40,19 +40,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "title": {
                   "example": "any"
                 },
-                "lastName": {
+                "format": {
                   "example": "any"
                 },
-                "email": {
+                "publication": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "pages": {
                   "example": "any"
                 },
-                "birthday": {
+                "author": {
+                  "example": "any"
+                },
+                "genre": {
+                  "example": "any"
+                },
+                "description": {
                   "example": "any"
                 }
               }
@@ -104,19 +110,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "title": {
                   "example": "any"
                 },
-                "lastName": {
+                "format": {
                   "example": "any"
                 },
-                "email": {
+                "publication": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "pages": {
                   "example": "any"
                 },
-                "birthday": {
+                "author": {
+                  "example": "any"
+                },
+                "genre": {
+                  "example": "any"
+                },
+                "description": {
                   "example": "any"
                 }
               }
@@ -180,13 +192,13 @@
                 "lastName": {
                   "example": "any"
                 },
-                "email": {
+                "birthDate": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "deathDate": {
                   "example": "any"
                 },
-                "birthday": {
+                "bio": {
                   "example": "any"
                 }
               }
@@ -244,13 +256,13 @@
                 "lastName": {
                   "example": "any"
                 },
-                "email": {
+                "birthDate": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "deathDate": {
                   "example": "any"
                 },
-                "birthday": {
+                "bio": {
                   "example": "any"
                 }
               }
