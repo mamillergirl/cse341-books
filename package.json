@@ -1,0 +1,23 @@
+{
+  "name": "cse341-books",
+  "version": "1.0.0",
+  "description": "The second project for CSE341",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "swagger-autogen": "node ./swagger.js"
+  },
+  "author": "Marisa Miller",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.40.0",
+    "express": "^4.18.2",
+    "mongodb": "^5.5.0",
+    "nodemon": "^2.0.22",
+    "swagger-autogen": "^2.23.1",
+    "swagger-ui-express": "^4.6.3"
+  }
+}

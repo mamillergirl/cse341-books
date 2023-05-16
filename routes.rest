@@ -1,0 +1,27 @@
+GET http://localhost:8080/books/
+###
+GET http://localhost:8080/authors/
+###
+POST http://localhost:8080/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and the Philosophers Stone",
+    "format": "req.body.format",
+    "publication": "req.body.publication",
+    "pages": "req.body.pages",
+    "author": "req.body.author",
+    "genre": "req.body.genre",
+    "description": "req.body.description"
+}
+###
+POST http://localhost:8080/authors HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "req.body.firstName",
+    "lastName": "req.body.lastName",
+    "birthDate": "req.body.birthDate",
+    "deathDate":"req.body.deathDate",
+    "bio": "req.body.bio"
+}
