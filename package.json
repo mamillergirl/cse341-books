@@ -1,4 +1,7 @@
-{
+{ 
+  "engines": {
+  "node": ">=14.20.1"
+},
   "name": "cse341-books",
   "version": "1.0.0",
   "description": "The second project for CSE341",
