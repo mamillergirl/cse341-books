@@ -19,8 +19,8 @@ POST http://localhost:8080/authors HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "req.body.firstName",
-    "lastName": "req.body.lastName",
+    "firstName": "JK",
+    "lastName": "Rowling",
     "birthDate": "req.body.birthDate",
     "deathDate":"req.body.deathDate",
     "bio": "req.body.bio"
