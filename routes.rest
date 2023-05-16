@@ -25,3 +25,7 @@ Content-Type: application/json
     "deathDate":"req.body.deathDate",
     "bio": "req.body.bio"
 }
+###
+GET https://cse341-books.onrender.com/books/
+###
+GET https://cse341-books.onrender.com/authors/
