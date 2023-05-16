@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Contacts API",
-    "description": "Stores contact info and allows users to CRUD contacts.",
+    "title": "Library API",
+    "description": "Stores book and author info and allows users to CRUD.",
     "version": "1.0.0"
   },
   "host": "cse341-books.onrender.com",
