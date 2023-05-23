@@ -1,4 +1,4 @@
-GET http://localhost:8080/books/
+GET http://localhost:8080/books/123
 ###
 GET http://localhost:8080/authors/
 ###
@@ -9,7 +9,7 @@ Content-Type: application/json
     "title": "Harry Potter and the Philosophers Stone",
     "format": "req.body.format",
     "publication": "req.body.publication",
-    "pages": "req.body.pages",
+    "pages": "111",
     "author": "req.body.author",
     "genre": "req.body.genre",
     "description": "req.body.description"
@@ -19,10 +19,21 @@ POST http://localhost:8080/authors HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "JK",
+    "firstName": "Jk",
     "lastName": "Rowling",
-    "birthDate": "req.body.birthDate",
-    "deathDate":"req.body.deathDate",
+    "birthDate": "7/22/2003",
+    "deathDate":"",
+    "bio": "req.body.bio"
+}
+###
+PUT http://localhost:8080/authors/646d280dd8aae467b569f5e1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Jk",
+    "lastName": "Rowling",
+    "birthDate": "",
+    "deathDate":"8/16/2050",
     "bio": "req.body.bio"
 }
 ###

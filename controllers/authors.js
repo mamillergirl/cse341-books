@@ -9,6 +9,9 @@ const getAll = async (req, res) => {
 };
 
 const getOne = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to find a contact.');
+  }
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
@@ -22,6 +25,7 @@ const getOne = async (req, res) => {
 };
 
 const createOne = async (req, res) => {
+  
   const newAuthor = 
   {
     firstName: req.body.firstName,
@@ -44,6 +48,9 @@ const createOne = async (req, res) => {
 };
 
 const updateOne = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to find a contact.');
+  }
   const newInfo = 
   {
     firstName: req.body.firstName,
@@ -66,6 +73,9 @@ const updateOne = async (req, res) => {
     }
   }
   const deleteOne = async (req, res) => {
+    if (!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid contact id to find a contact.');
+    }
     const userId = new ObjectId(req.params.id);
     const response = await mongodb
       .getDb()
