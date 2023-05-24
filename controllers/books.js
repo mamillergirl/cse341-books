@@ -5,13 +5,14 @@ const getAll =  (req, res) => {
   .db("library")
   .collection("books")
   .find()
-  .toArray()
-  .then((err, lists) => {
+  .toArray((err) => {
     if (err) {
       res.status(400).json({ message: err });
     }
+  })
+  .then((lists) => {
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(lists);
+    res.status(200).json(lists[0]);
   });
 };
 
@@ -31,10 +32,9 @@ const getOne = async (req, res) => {
       }
     })
     .then((lists) => {
-        
-        res.setHeader("Content-Type", "application/json");
-        res.status(200).json(lists[0]);
-      });
+      res.setHeader("Content-Type", "application/json");
+      res.status(200).json(lists[0]);
+    });
 
 };
 
