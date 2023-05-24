@@ -18,7 +18,7 @@ const getAll =  (req, res) => {
 
 const getOne = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to find a contact.');
+    res.status(400).json('Must use a valid book id to find a book.');
   }
   const userId = new ObjectId(req.params.id);
   mongodb
@@ -64,7 +64,7 @@ const createOne = async (req, res) => {
 
 const updateOne = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to find a contact.');
+    res.status(400).json('Must use a valid book id to find a book.');
   }
   const newInfo = 
   {
@@ -91,7 +91,7 @@ const updateOne = async (req, res) => {
   }
   const deleteOne = async (req, res) => {
     if (!ObjectId.isValid(req.params.id)) {
-      res.status(400).json('Must use a valid contact id to find a contact.');
+      res.status(400).json('Must use a valid book id to find a book.');
     }
     const userId = new ObjectId(req.params.id);
     const response = await mongodb
