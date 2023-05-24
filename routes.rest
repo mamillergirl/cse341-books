@@ -1,4 +1,4 @@
-GET http://localhost:8080/books/123
+GET http://localhost:8080/books/
 ###
 GET http://localhost:8080/authors/
 ###
@@ -9,7 +9,7 @@ Content-Type: application/json
     "title": "Harry Potter and the Philosophers Stone",
     "format": "req.body.format",
     "publication": "req.body.publication",
-    "pages": "111",
+    "pages": "five",
     "author": "req.body.author",
     "genre": "req.body.genre",
     "description": "req.body.description"
