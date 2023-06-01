@@ -1,7 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongodb = require("./db/connect");
-
+const passport = require('passport')
+const session = require('express-session')
 const port = process.env.PORT || 8080;
 const app = express();
 
@@ -16,6 +17,17 @@ app
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
   })
+  
+  app.use(
+    session({
+      secret: 'keyboard cat',
+      resave: false,
+      saveUninitialized: false,
+      cookie: { secure: false } 
+    })
+  )
+  app.use(passport.initialize())
+app.use(passport.session())
   .use(require("./routes"));
   
 process.on('uncaughtException', (err, origin) => {
