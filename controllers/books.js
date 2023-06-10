@@ -12,7 +12,7 @@ const getAll =  (req, res) => {
   })
   .then((lists) => {
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(lists[0]);
+    res.status(200).json(lists);
   });
 };
 
