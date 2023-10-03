@@ -3,7 +3,7 @@
 This is a simple Rest API that allows you to GET, PUT, POST, and DELETE authors, books, and profiles. 
 
 You can use the routes /authors, /books, and /profile
-(Rest Url)[https://cse341-books.onrender.com/]
+https://cse341-books.onrender.com/
 
 # Development
 
