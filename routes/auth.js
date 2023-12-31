@@ -13,7 +13,7 @@ passport.use(
       // options for google strategy
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "/auth/callback"
+      callbackURL: "https://cse341-books.onrender.com/auth/callback"
   }, (accessToken, refreshToken, profile, done) => {
       
       //console.log('passport callback function fired:');
