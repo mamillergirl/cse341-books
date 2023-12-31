@@ -67,7 +67,7 @@ router.get('/callback',
     res.redirect('/profile')
 });
 router.get('/login', (req,res) => {res.send(
-  `<p>Sign in with Google First</p><button><a href="http://localhost:8080/auth">Sign In</a></button>`
+  `<p>Sign in with Google First</p><button><a href="/auth">Sign In</a></button>`
 )})
 
 router.get('/logout', (req, res, next) => {
